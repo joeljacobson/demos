@@ -15,7 +15,7 @@ func main() {
 	config.Consumer.Return.Errors = true
 
 	// Specify brokers address. This is default one
-	brokers := []string{"broker.kafka.l4lb.thisdcos.directory:9092"}
+	brokers := []string{"broker.business-unit-onedevkafka.l4lb.thisdcos.directory:9092"}
 
 	// Create new consumer
 	master, err := sarama.NewConsumer(brokers, config)

@@ -26,7 +26,7 @@ public class FinancialTransactionJob {
         ParameterTool parameters = ParameterTool.fromArgs (args);
         String inputTopic = parameters.get ("inputTopic", "transactions");
         String outputTopic = parameters.get ("outputTopic", "fraud");
-        String kafka_host = parameters.get ("kafka_host", "broker.kafka.l4lb.thisdcos.directory:9092");
+        String kafka_host = parameters.get ("kafka_host", "broker.confluent-kafka.l4lb.thisdcos.directory:9092");
 
         // create execution environment
         StreamExecutionEnvironment env = StreamExecutionEnvironment.getExecutionEnvironment ();
